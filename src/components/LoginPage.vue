@@ -7,18 +7,8 @@
         </ion-header>
         <ion-content>
             <div class="ion-padding">
-                <form class="login-form">
-                    <h2>Login</h2>
-                    <div class="input-group">
-                        <ion-label position="floating">Email</ion-label>
-                        <ion-input type="email" placeholder="Enter your email"></ion-input>
-                    </div>
-                    <div class="input-group">
-                        <ion-label position="floating">Password</ion-label>
-                        <ion-input type="password" placeholder="Enter your password"></ion-input>
-                    </div>
-                    <ion-button expand="block" color="warning" @click="login">Login</ion-button>
-                </form>
+                  <ion-button @click="signInWithGoogle" class="google-button">Se connecter avec Google</ion-button>
+                  <ion-button @click="signUpWithGoogle" class="google-button">creer un compte avec Google</ion-button>    
             </div>
         </ion-content>
     </ion-page>
@@ -64,8 +54,7 @@ ion-button {
 
 
 ion-button.btn-yellow {
-  background-color: yellow; 
-  color: #333;
+  background-color: #e5f80d;
 }
 
 ion-button.btn-yellow:hover {
